@@ -1,0 +1,100 @@
+1.
+#include <stdio.h>
+int main()
+{
+    float a, b;
+    printf("Enter the value of a");
+    scanf("%f", &a);
+    printf("Enter the value of b");
+    scanf("%f", &b);
+    printf("%f+%f=%f\n",a,b,a+b);
+    printf("%f-%f=%f\n",a,b,a-b);
+    printf("%f*%f=%f\n",a,b,a*b);
+    printf("%f/%f=%f\n",a,b,a/b);
+    return 0;
+}
+2.
+#include <stdio.h>
+int main()
+{
+    float temp;
+    float farh;
+    printf("Enter the temperature in celcious");
+    scanf("%f",&temp);
+    farh=((temp*9)/5)+32;
+    printf("The temperature in fahrenheit is %f",farh);
+    return 0;
+}    
+3.
+#include <stdio.h>
+int main()
+{
+    float r,pie=3.14;
+    float area;
+    printf("Enter the redious of circle");
+    scanf("%f",&r);
+    area=pie*r*r;
+    printf("The area of the circle is %f",area);
+    return 0;
+}    
+4.
+#include <stdio.h>
+int main()
+{
+    float phy,che,bio,math,comp;
+    float avg;
+    float percentage;
+    printf("Enter the mark of physics");
+    scanf("%f", &phy);
+     printf("Enter the mark of chemistry");
+    scanf("%f", &che);
+     printf("Enter the mark of biology");
+    scanf("%f", &bio);
+     printf("Enter the mark of mathematics");
+    scanf("%f", &math);
+     printf("Enter the mark of computer");
+    scanf("%f", &comp);
+    avg=(phy+che+bio+math+comp)/5;
+    printf("The total percentage is %f ",avg);
+    if(avg>=90){
+        printf("Grade A");
+    }
+    if(avg<90 && avg>=80){
+        printf("Grade B");
+    }
+    else if(avg<80 && avg>=70){
+        printf("Grade C");
+    }
+    else if(avg<70 && avg>=60){
+        printf("Grade D");
+    }
+    else if(avg<60 && avg>=40){
+        printf("Grade E");
+    }
+    else if(avg<40){
+        printf("Grade F");
+    }
+    return 0;
+}    
+5.
+#include<stdio.h>
+int main(){
+    char latter;
+    printf("Enter a latter");
+    scanf("%c",&latter);
+    switch(latter)
+    {
+        case 'a':printf("vowel");
+        break;
+         case 'e':printf("vowel");
+        break;
+         case 'i':printf("vowel");
+        break;
+         case 'o':printf("vowel");
+        break;
+         case 'u':printf("vowel");
+        break;
+        default:printf("Consonant");
+    }    
+    return 0;
+}
